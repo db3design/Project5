@@ -1,0 +1,19 @@
+// colors
+$color-main: #58e1c1;
+$color-text: #777;
+$color-text-lighter: lighten($color-text, 25%);
+$color-default: #51ddfc;
+$color-success: #63cc82;
+$color-error: #e4757a;
+$color-warning: #fd7856;
+$color-info: #927bc1;
+
+// fonts 
+$primary-font-family: 'Lato', sans-serif;
+$primary-font-size: 16px;
+
+// spacing
+$standard-padding: 5% 10%;
+$small-padding: 2.5% 5%;
+$button-padding: 10px 40px;
+$gutter: 2.5%;

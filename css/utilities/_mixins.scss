@@ -1,0 +1,25 @@
+@mixin title-position {
+    padding: $standard-padding;
+    margin-left: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: -50px;
+}
+
+@mixin default-button {
+    background-color: $color-main;
+    color: white;
+    line-height: 1.75;
+    font-weight: 400;
+    padding: $button-padding;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    transition: all 1s;
+
+    &:hover {
+        opacity: .75;
+        color: rgba($color: #ffffff, $alpha: 1.0);
+        cursor: pointer;
+    }
+}

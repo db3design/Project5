@@ -1,0 +1,61 @@
+#grid {
+    @include title-position;
+}
+
+#grid_container {
+    .row {
+        display: flex;
+
+        & > div {
+            padding: $button-padding;
+            border-radius: 15px;
+            color: white;
+        }
+        .col-12 {
+            flex: 1 100%;
+            background-color: $color-main;
+            margin: auto $gutter;
+        }
+        .col-6 {
+            flex: .5 50%;
+            text-align: center;
+            background-color: $color-default;
+            margin: auto $gutter;
+        }
+        .col-4 {
+            flex: .33 33%;
+            background-color: $color-info;
+            margin: auto $gutter;
+        }
+        .col-3 {
+            flex: .25 25%;
+            background-color: $color-error;
+            margin: auto $gutter;
+        }
+        .col-5 {
+            flex: .416 41.6%;
+            background-color: $color-warning;
+            margin: auto $gutter;
+        }
+        .col-7 {
+            flex: .583 58.3%;
+            background-color: $color-warning;
+            margin: auto $gutter;
+        }
+        .col-8 {
+            flex: .66 66%;
+            background-color: $color-info;
+            margin: auto $gutter;
+        }
+        .centered {
+            margin: auto;
+            text-align: center;
+            background-color: $color-main;
+            max-width: 58.3%;
+
+            @media (max-width: 600px) {
+                max-width: 100%;
+            }
+        }
+    }
+}

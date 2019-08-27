@@ -1,0 +1,40 @@
+#images {
+    @include title-position;
+}
+
+.row {
+    display: flex;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        justify-content: center;
+        padding: $small-padding;
+        margin-bottom: 50px;
+    }
+
+    .col-6 {
+        flex: 1 50%;
+        display: flex;
+
+        @media (max-width: 600px) {
+            margin-top: $gutter;
+            margin-bottom: $gutter;
+        }
+
+        .img {
+            margin: auto;
+        }
+
+        .img-frame {
+            outline-color: $color-text-lighter;
+            outline-style: solid;
+            outline-width: 1px;
+            outline-offset: 17.5px;
+
+            @media (max-width: 600px) {
+                margin-top: 35px;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

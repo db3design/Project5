@@ -1,0 +1,102 @@
+.row .col-12 {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin-bottom: 0;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.row {
+    margin-top: 0;
+    display: flex;
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    .col-8 {
+        flex: 2 75%;
+
+        h1 {
+            padding-left: 10px;
+        }
+        blockquote {
+            margin-left: 15px;
+            padding-left: 25px;
+            border-left: 10px solid $color-main;
+            border-radius: 10px;
+            font-size: 125%;
+            color: $color-text;
+            font-weight: 300;
+            line-height: 1.75;
+            margin-top: 35px;
+
+            @media (max-width: 600px) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    .col-4 {
+        flex: 1 25%;
+        padding-left: 10%;
+
+        @media (max-width: 600px) {
+            padding-left: 0;
+            margin-top: 15px;
+            margin-bottom: 35px;
+        }
+
+        form {
+            padding: $small-padding;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            legend {
+                flex: 1 100%;
+                margin-bottom: 25px;
+                font-size: 115%;
+                text-transform: capitalize;
+                letter-spacing: 1.075px;
+                word-spacing: -1.075px;
+                font-weight: 300;
+                line-height: 2;
+            }
+            img {
+                margin-bottom: 25px;
+            }
+            label {
+                display: none;
+            }
+            input {
+                flex: 1 100%;
+                margin-bottom: 15px;
+            }
+            button {
+                flex: 1 100%;
+                margin-top: 10px;
+                background-color: $color-default;
+                border: 1.5px solid $color-default;
+                color: white;
+                padding: $small-padding;
+                transition: all 1;
+
+                &:hover {
+                    background-color: $color-main;
+                    border-color: $color-main;
+                    cursor: pointer;
+                }
+            }
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+        }
+    }
+}
