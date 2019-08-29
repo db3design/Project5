@@ -1,16 +1,22 @@
+// aligns title with all other titles
 #grid {
     @include title-position;
 }
 
+
 #grid_container {
+    // displays all rows, within the grid container, as flex containers
     .row {
         display: flex;
 
+        // styles all grid examples with button styles
         & > div {
             padding: $button-padding;
             border-radius: 15px;
             color: white;
         }
+
+        // defines proper sizes of all grid elements
         .col-12 {
             flex: 1 100%;
             background-color: $color-main;
@@ -47,6 +53,8 @@
             background-color: $color-info;
             margin: auto $gutter;
         }
+
+        // special .col-lg-7 centered container
         .centered {
             margin: auto;
             text-align: center;

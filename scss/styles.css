@@ -87,23 +87,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5% 10%;
-  margin-bottom: -100px;
 }
 
 @media (max-width: 600px) {
   header {
     margin-bottom: 50px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -112,7 +100,6 @@ header .col-3 {
       -ms-flex: 1 33%;
           flex: 1 33%;
   margin: auto;
-  margin-left: 5%;
 }
 
 @media (max-width: 600px) {
@@ -323,6 +310,8 @@ header .col-9 nav a:hover {
 @media (max-width: 600px) {
   .row .col-4 form {
     width: 100%;
+    padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -342,6 +331,9 @@ header .col-9 nav a:hover {
 
 @media (max-width: 600px) {
   .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -462,7 +454,7 @@ header .col-9 nav a:hover {
 }
 
 #buttonRow .col-12 .success {
-  background-color: #63cc82 !important;
+  background-color: #63cc82;
 }
 
 #buttonRow .col-12 .error {

@@ -1,3 +1,4 @@
+// title position
 @mixin title-position {
     padding: $standard-padding;
     margin-left: 10px;
@@ -6,6 +7,8 @@
     margin-top: -50px;
 }
 
+
+// default button
 @mixin default-button {
     background-color: $color-main;
     color: white;
@@ -22,4 +25,11 @@
         color: rgba($color: #ffffff, $alpha: 1.0);
         cursor: pointer;
     }
+}
+
+// center flex 
+@mixin center-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
